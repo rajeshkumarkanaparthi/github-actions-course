@@ -6,7 +6,6 @@ jobs:
     defaults:
       run:
         working-directory: 04-using-actions/react-app
-    # 0. Checkout the code from the repository
     steps:
       - name: Checkout Code
         uses: actions/checkout@v7.0.0
@@ -18,5 +17,3 @@ jobs:
         run: npm ci
       - name: Run Unit test
         run: npm test
-    # 1. Install the deps of react application
-    # 2. Execute automated tests
