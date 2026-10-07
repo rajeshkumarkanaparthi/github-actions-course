@@ -2,6 +2,19 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Running tests
+
+From this directory, install dependencies with `npm ci`, then run:
+
+```bash
+npm test
+```
+
+This runs the Vitest suite once and exits, suitable for local checks and GitHub Actions.
+Use `npm run test:watch` to rerun tests automatically while editing.
+Tests use React Testing Library and jsdom to check the initial page, counter clicks,
+keyboard interaction, and documentation links.
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
