@@ -7,7 +7,12 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v7.0.0
-      - name: Printing folders
-        run: ls
+      - name: Setup Node
+        uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24.x'
+      - name: Install Dependencies
+        run: npm ci
+        working-directory: 04-using-actions/react-app
     # 1. Install the deps of react application
     # 2. Execute automated tests
